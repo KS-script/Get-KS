@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS EXECUTOR - Premium Roblox Executor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Mouse Glow Effect -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="particles" id="particles"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo" data-hover-3d>
+                <div class="logo-icon">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <h1>KS EXECUTOR</h1>
+            </div>
+            <nav>
+                <a href="#home" class="nav-link active" data-hover-3d>Home</a>
+                <a href="#features" class="nav-link" data-hover-3d>Features</a>
+                <a href="#preview" class="nav-link" data-hover-3d>Preview</a>
+                <a href="#download" class="nav-link" data-hover-3d>Download</a>
+                <a href="#contact" class="nav-link" data-hover-3d>Contact</a>
+            </nav>
+            <button class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#preview" class="nav-link">Preview</a>
+        <a href="#download" class="nav-link">Download</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon" data-tilt data-tilt-max="15">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2 class="hero-title">
+                    <span class="text-reveal">KS EXECUTOR</span>
+                </h2>
+                <p class="hero-subtitle">
+                    The most powerful and reliable Roblox executor with advanced features
+                </p>
+                
+                <!-- 기본 설명 추가 -->
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>Easy Accessibility</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Customizable UI & Background</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary" data-hover-3d data-ripple>
+                        <span class="btn-content">
+                            <i class="fas fa-download"></i>
+                            Download Now
+                        </span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary" data-hover-3d data-ripple>
+                        <span class="btn-content">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </span>
+                    </a>
+                </div>
+                <div class="version-badge">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Version 2.01</span>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-star"></i>
+                    Features
+                </span>
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-desc">Discover what makes KS Executor the best choice</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-tilt data-tilt-max="8">
+                    <div class="feature-glow"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>100% Free Executor</h3>
+                        <p>Completely free to use with no hidden costs, subscriptions, or premium tiers</p>
+                    </div>
+                    <div class="feature-line"></div>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="8">
+                    <div class="feature-glow"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Auto Update</h3>
+                        <p>Automatically updates to the latest version without manual intervention</p>
+                    </div>
+                    <div class="feature-line"></div>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="8">
+                    <div class="feature-glow"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Anti-Cheat Bypass</h3>
+                        <p>Advanced anti-detection system to keep you safe while executing scripts</p>
+                    </div>
+                    <div class="feature-line"></div>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="8">
+                    <div class="feature-glow"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Multi API Support</h3>
+                        <p>Supports multiple execution APIs for maximum compatibility and performance</p>
+                    </div>
+                    <div class="feature-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section class="preview-section" id="preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-image"></i>
+                    Preview
+                </span>
+                <h2 class="section-title">Executor Preview</h2>
+                <p class="section-desc">Take a look at our sleek and powerful executor</p>
+            </div>
+            
+            <div class="preview-wrapper">
+                <div class="preview-container" data-tilt data-tilt-max="5">
+                    <div class="preview-glow-outer"></div>
+                    <div class="preview-glow-inner"></div>
+                    <div class="preview-image-container">
+                        <img src="KS.png" alt="KS Executor Preview" class="preview-image" id="previewImage">
+                        <div class="preview-shine"></div>
+                    </div>
+                </div>
+                
+                <div class="preview-info">
+                    <div class="preview-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>KS Executor v2.01</span>
+                    </div>
+                    <div class="preview-features">
+                        <div class="preview-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Modern UI Design</span>
+                        </div>
+                        <div class="preview-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Built-in Script Editor</span>
+                        </div>
+                        <div class="preview-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Script Hub Access</span>
+                        </div>
+                        <div class="preview-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Themes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-download"></i>
+                    Download
+                </span>
+                <h2 class="section-title">Get KS Executor</h2>
+                <p class="section-desc">Download and start executing scripts instantly</p>
+            </div>
+            
+            <!-- Download Info Card -->
+            <div class="download-info-card" data-tilt data-tilt-max="3">
+                <div class="card-shine"></div>
+                
+                <div class="info-header">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="label">Made by</span>
+                            <span class="value">Team KS</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="label">Version</span>
+                            <span class="value">2.01</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="label">Latest Update</span>
+                            <span class="value">2026.02.21</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Button -->
+                <div class="download-container">
+                    <a href="https://github.com/kgycoder/Download/raw/main/KS%20v2.zip" 
+                       class="download-btn" 
+                       data-hover-3d 
+                       data-ripple
+                       download>
+                        <div class="download-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="download-content">
+                            <span class="download-title">Download KS Executor</span>
+                            <span class="download-subtitle">Version 2.01 • Windows Only</span>
+                        </div>
+                        <div class="download-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <div class="download-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Make sure to disable your antivirus before downloading. Some antiviruses may flag executors as false positives.</p>
+                    </div>
+                </div>
+
+                <!-- API Support -->
+                <div class="api-section">
+                    <button class="api-toggle" onclick="toggleAPI()" data-ripple>
+                        <div class="toggle-left">
+                            <i class="fas fa-cogs"></i>
+                            <span>Supported APIs</span>
+                        </div>
+                        <div class="toggle-right">
+                            <span class="toggle-status">Click to view</span>
+                            <i class="fas fa-chevron-down toggle-arrow"></i>
+                        </div>
+                    </button>
+                    <div class="api-list" id="apiList">
+                        <div class="api-grid">
+                            <div class="api-item">
+                                <div class="api-header">
+                                    <div class="api-name">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Velocity</span>
+                                    </div>
+                                    <div class="api-level level-8">
+                                        <i class="fas fa-star"></i>
+                                        <span>Level 8</span>
+                                    </div>
+                                </div>
+                                <div class="api-stats">
+                                    <div class="api-stat">
+                                        <span class="stat-label">SUNC</span>
+                                        <div class="stat-bar">
+                                            <div class="stat-fill" data-width="94"></div>
+                                        </div>
+                                        <span class="stat-value">94%</span>
+                                    </div>
+                                    <div class="api-stat">
+                                        <span class="stat-label">UNC</span>
+                                        <div class="stat-bar">
+                                            <div class="stat-fill" data-width="99"></div>
+                                        </div>
+                                        <span class="stat-value">99%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="api-item">
+                                <div class="api-header">
+                                    <div class="api-name">
+                                        <i class="fas fa-code"></i>
+                                        <span>Xeno</span>
+                                    </div>
+                                    <div class="api-level level-3">
+                                        <i class="fas fa-star"></i>
+                                        <span>Level 3</span>
+                                    </div>
+                                </div>
+                                <div class="api-stats">
+                                    <div class="api-stat">
+                                        <span class="stat-label">UNC</span>
+                                        <div class="stat-bar">
+                                            <div class="stat-fill" data-width="82"></div>
+                                        </div>
+                                        <span class="stat-value">82%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Installation Guide -->
+                <div class="guide-section">
+                    <h3 class="guide-title">
+                        <i class="fas fa-book"></i>
+                        Installation Guide
+                    </h3>
+                    <div class="guide-steps">
+                        <div class="guide-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Download</h4>
+                                <p>Click the download button above to get KS Executor</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Extract</h4>
+                                <p>Extract the ZIP file to your desired location</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Run</h4>
+                                <p>Run KS Executor.exe as administrator</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Execute</h4>
+                                <p>Inject into Roblox and start executing your scripts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-share-alt"></i>
+                    Social
+                </span>
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-desc">Join our community for updates and support</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@ks_script" target="_blank" class="social-card youtube" data-tilt data-tilt-max="8">
+                    <div class="social-shine"></div>
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span class="social-name">YouTube</span>
+                    <p>Watch tutorials & updates</p>
+                    <div class="social-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://discord.gg/6JtrVMsg" target="_blank" class="social-card discord" data-tilt data-tilt-max="8">
+                    <div class="social-shine"></div>
+                    <div class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <span class="social-name">Discord</span>
+                    <p>Join our community server</p>
+                    <div class="social-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-terminal"></i>
+                    <span>KS EXECUTOR</span>
+                </div>
+                <p>&copy; 2026 KS EXECUTOR. All rights reserved.</p>
+                <p class="footer-credit">Made with <i class="fas fa-heart"></i> by Team KS</p>
+                <div class="footer-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Use responsibly. We are not responsible for any misuse of this software.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-download"></i>
+        </div>
+        <div class="toast-content">
+            <span class="toast-title">Download Started!</span>
+            <span class="toast-message">KS Executor is being downloaded</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
